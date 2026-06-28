@@ -104,15 +104,30 @@ python -m streamlit run app.py
 
 ## 🗃️ Database Schema
 
-**Table Name:** STUDENT
+**Table Name:** `STUDENT`
 
-| Column  | Description     |
-| ------- | --------------- |
-| NAME    | Student Name    |
-| CLASS   | Student Class   |
-| SECTION | Student Section |
+| Column  | Data Type | Description     |
+| ------- | --------- | --------------- |
+| NAME    | TEXT      | Student Name    |
+| CLASS   | TEXT      | Student Class   |
+| SECTION | TEXT      | Student Section |
+| MARKS   | INTEGER   | Student Marks   |
 
----
+## 💡 Example Queries
+
+* Show all students.
+* Count the total number of students.
+* Show students from the Data Science class.
+* List all students in Section A.
+* Show students who scored more than 90 marks.
+* Display students who scored between 70 and 90 marks.
+* Find the student with the highest marks.
+* Find the student with the lowest marks.
+* Calculate the average marks of all students.
+* Show students sorted by marks in descending order.
+* Count students in each class.
+* Show students whose names start with "R".
+
 
 ## 🔄 Application Workflow
 
@@ -120,16 +135,6 @@ python -m streamlit run app.py
 2. Gemini AI converts the question into an SQL query.
 3. The generated SQL query is executed on the SQLite database.
 4. The query result is displayed in the Streamlit application.
-
----
-
-## 📸 Screenshots
-
-Add screenshots of:
-
-* Home Screen
-* Generated SQL Query
-* Query Results
 
 ---
 
